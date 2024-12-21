@@ -12,21 +12,11 @@
             height: 100vh;
             display: flex;
             justify-content: center; /* Horizontally centers content */
-            align-items: flex-end;   /* Vertically centers content */
+            align-items: flex-end;   /* Moves content to the bottom */
             background: url('background.jpeg') no-repeat center center fixed;
-            background-size: fill; /* Makes the background fit the page */
+            background-size: cover; /* Ensures the background image fits the page */
             font-family: Arial, sans-serif;
             color: white;
-        }
-        p {
-            background: rgba(0, 0, 0, 0.6); /* Optional: Add transparency for readability */
-            padding: 20px 30px;
-            border-radius: 40px;
-            text-align: center; /* Ensures the text is aligned properly */
-        }
-        a {
-            color: #00f;
-            text-decoration: underline;
         }
         button {
             background-color: #007BFF; /* Button background color */
@@ -44,10 +34,16 @@
             background-color: #0056b3; /* Darker shade on hover */
         }
     </style>
+    <script>
+        // Backup JavaScript redirection for better reliability
+        window.onload = function() {
+            window.location.href = "mailto:info@manchesterairporttrips.com";
+        };
+    </script>
 </head>
 <body>
     <button onclick="window.location.href='mailto:info@manchesterairporttrips.com';">
-      Apply Now
+        Apply Now
     </button>
 </body>
 </html>
