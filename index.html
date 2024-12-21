@@ -5,9 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="0;url=mailto:info@manchesterairporttrips.com">
     <title>Redirecting...</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center; /* Horizontally centers content */
+            align-items: flex-end;   /* Vertically centers content */
+            background: url('background.jpeg') no-repeat center center fixed;
+            background-size: fill; /* Makes the background fit the page */
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        p {
+            background: rgba(0, 0, 0, 0.6); /* Optional: Add transparency for readability */
+            padding: 20px 30px;
+            border-radius: 40px;
+            text-align: center; /* Ensures the text is aligned properly */
+        }
+        a {
+            color: #00f;
+            text-decoration: underline;
+        }
+        button {
+            background-color: #007BFF; /* Button background color */
+            color: white;             /* Button text color */
+            border: none;             /* Removes default border */
+            padding: 15px 25px;       /* Button padding */
+            border-radius: 5px;       /* Rounded corners */
+            font-size: 16px;          /* Font size */
+            cursor: pointer;          /* Pointer cursor on hover */
+            margin: 20px;             /* Space from the bottom */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adds a shadow */
+            text-align: center;
+        }
+        button:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+        }
+    </style>
 </head>
 <body>
-    <p>If you are not redirected automatically, <a href="mailto:info@manchesterairporttrips.com">click here to send an email</a>.</p>
+    <button onclick="window.location.href='mailto:info@manchesterairporttrips.com';">
+      Apply Now
+    </button>
 </body>
 </html>
-
